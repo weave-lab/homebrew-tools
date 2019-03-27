@@ -1,8 +1,8 @@
 class Bart < Formula
   desc "bart cli"
   homepage "https://github.com/weave-lab/bart"
-  url "./bart-1.0.tar.gz"
-  sha256 "b4aa573718ba1fc55c4950358970eabf5b1183628e16eaf9b810568faf74b15a"
+  url "https://github.com/weave-lab/bart/releases/download/v0.0.1/bart_0.0.1_Linux_x86_64.tar.gz"
+  sha256 "72de295df9a0e4f70c78a3133dc485d0e6e90abda7343cb9835bb076dcc2b573"
   head "https://github.com/weave-lab/bart.git"
   version "0.0.1"
 
