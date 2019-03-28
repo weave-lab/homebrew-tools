@@ -52,6 +52,9 @@ class GitHubPrivateRepositoryDownloadStrategy < CurlDownloadStrategy
   require "utils/github"
 
   def initialize(url, name, version, **meta)
+    odeprecated("GitHubPrivateRepositoryDownloadStrategy",
+      "maintaining GitHubPrivateRepositoryDownloadStrategy in your own formula or tap")
+    super
     parse_url_pattern
     set_github_token
   end
@@ -103,6 +106,9 @@ end
 # environment variables HOMEBREW_GITHUB_API_TOKEN) to sign the request.
 class GitHubPrivateRepositoryReleaseDownloadStrategy < GitHubPrivateRepositoryDownloadStrategy
   def initialize(url, name, version, **meta)
+    odeprecated("GitHubPrivateRepositoryReleaseDownloadStrategy",
+      "maintaining GitHubPrivateRepositoryReleaseDownloadStrategy in your own formula or tap")
+    super
   end
 
   def parse_url_pattern
