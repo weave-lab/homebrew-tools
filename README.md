@@ -7,7 +7,7 @@ Either prefix it with the `brew install` command or `export` it to your environm
 Then:
 
 ```
-brew tap weave-lab/homebrew-tools
+brew tap weave-lab/tools
   
 brew install bart
 ```
