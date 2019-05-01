@@ -3,9 +3,9 @@ require_relative "../download_strategy"
 class Bart < Formula
   desc ""
   homepage "https://github.com/weave-lab/bart"
-  url "https://github.com/weave-lab/bart/releases/download/v1.0.90/bart_1.0.90_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-  version "1.0.90"
-  sha256 "5c424bf870f603b3f448dc8846fa1945eab010afc75b9416f8be4b39256d52e2"
+  url "https://github.com/weave-lab/bart/releases/download/v1.0.100/bart_1.0.100_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+  version "1.0.100"
+  sha256 "aa4a34379375776df56fee045fa55cd055f506d5b1707b5a67de67635a8cd7ed"
 
   def install
     bin.install "bart"
