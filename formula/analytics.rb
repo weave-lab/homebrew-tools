@@ -3,20 +3,20 @@ require_relative "../download_strategy"
 class Analytics < Formula
   desc ""
   homepage "https://github.com/weave-lab/analytics-etl"
-  version "0.1.0"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/weave-lab/analytics-etl/releases/download/v0.1.0/analytics-etl_0.1.0_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "8d7f21eef9669ab98e6da83ab23a67976a150e1e825a0da14d2dd99732a5b205"
+    url "https://github.com/weave-lab/analytics-etl/releases/download/v0.1.1/analytics-etl_0.1.1_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "7034a34ab7f763ecc7606e9b9b993ef3f9848bdb3b7578f274dd2f8e6f16086c"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/weave-lab/analytics-etl/releases/download/v0.1.0/analytics-etl_0.1.0_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "fa85064654b8f924e78728fd982388f575b2c08b62a69e4f886e7aaefd8f831a"
+      url "https://github.com/weave-lab/analytics-etl/releases/download/v0.1.1/analytics-etl_0.1.1_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "d14ad190c5ac9617bfa2e7f877832705e9e33e11e25b9c90a5bedd3696ad6cac"
     end
   end
 
   def install
-    bin.install "analtyics"
+    bin.install "analytics"
   end
 end
