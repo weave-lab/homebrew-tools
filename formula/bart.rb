@@ -3,16 +3,16 @@ require_relative "../download_strategy"
 class Bart < Formula
   desc ""
   homepage "https://github.com/weave-lab/bart"
-  version "1.1.693"
+  version "1.1.696"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/weave-lab/bart/releases/download/v1.1.693/bart_1.1.693_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "967e9f010a399a84c2d3e7c831cd7496c7d7af52545e8c85943500a3af6b8e42"
+    url "https://github.com/weave-lab/bart/releases/download/v1.1.696/bart_1.1.696_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "639b2fc87b9e8de64f02197584f863b54925921246694d5227a83396c4b11d5e"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/weave-lab/bart/releases/download/v1.1.693/bart_1.1.693_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "6623f13ee9f2355beb2c8e180b24c01d18d0dd3d38a3491d876b688e1f4098ec"
+      url "https://github.com/weave-lab/bart/releases/download/v1.1.696/bart_1.1.696_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "2a51ae7a1d6b57ad574206499ad53adcae0e96cd7d2feeb74ac2238f57e16e0f"
     end
   end
 
