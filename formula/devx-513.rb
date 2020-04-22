@@ -3,16 +3,16 @@ require_relative "../download_strategy"
 class Devx513 < Formula
   desc ""
   homepage "https://github.com/weave-lab/devx-513"
-  version "0.0.1"
+  version "0.0.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/weave-lab/devx-513/releases/download/v0.0.1/devx-513_0.0.1_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "12c44c7130a4d3090d45246850ab327dc204f33b726aabe4aca22fe2053f7465"
+    url "https://github.com/weave-lab/devx-513/releases/download/v0.0.2/devx-513_0.0.2_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "afe04fc925175d23ad27f1fcc0cffa52507daa20b5907d2b2a10577fda8b16b7"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/weave-lab/devx-513/releases/download/v0.0.1/devx-513_0.0.1_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "5851d5d025d329f4297d633af6d52bd5d14b0efba1e14f262d8693eee7bbb485"
+      url "https://github.com/weave-lab/devx-513/releases/download/v0.0.2/devx-513_0.0.2_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "9e0f2d49131c18e7e2be56694a4b21e5acfdaf442dc0407d9d1d6c2c59cc77e4"
     end
   end
 
