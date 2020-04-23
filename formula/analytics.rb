@@ -2,21 +2,17 @@
 require_relative "../download_strategy"
 class Analytics < Formula
   desc ""
-  homepage "https://github.com/weave-lab/analytics-etl"
-  version "0.1.8"
+  homepage "https://github.com/weave-lab/data-wvtutils"
+  version "0.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/weave-lab/analytics-etl/releases/download/v0.1.8/analytics-etl_0.1.8_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "7ea544b0a887cdd71dc24e6ef05c9755dfc072f781e6d0d946bcb000f6a79b24"
+    url "https://github.com/weave-lab/data-wvtutils/releases/download/v0.0.1/data-wvtutils_0.0.1_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "4ba9caca58d23b8c6922f8efb2a1dbc21c4f94efa556d42f105b923cf68c41a3"
   elsif OS.linux?
-    if Hardware::CPU.intel?
-      url "https://github.com/weave-lab/analytics-etl/releases/download/v0.1.8/analytics-etl_0.1.8_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "d0da21e4009ea78fa1c44cc005abffabf615ff2bba788fcb0c83891cdcd498ed"
-    end
   end
 
   def install
-    bin.install "analytics"
+    bin.install "wvtutils"
   end
 end
