@@ -3,12 +3,12 @@ require_relative "../download_strategy"
 class Analytics < Formula
   desc ""
   homepage "https://github.com/weave-lab/data-wvtutils"
-  version "0.0.2"
+  version "0.0.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/weave-lab/data-wvtutils/releases/download/v0.0.2/data-wvtutils_0.0.2_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "91bde577ec49e12c351eca281ece4b755c5fb70bcbcd6576adb8cf0509bb36df"
+    url "https://github.com/weave-lab/data-wvtutils/releases/download/v0.0.3/data-wvtutils_0.0.3_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "61ce4ecd882624efa12118c0696de5080a73c9821a14becc9a108a8516aff1cb"
   elsif OS.linux?
   end
 
